@@ -1,0 +1,52 @@
+<%- include('partials/header', { title: 'Companion\'s Corner - Home' }) %>
+
+<div style="padding-top: 250px; display: flex; flex: 1; padding-bottom: 100px;">
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/find">Find a dog/cat</a>
+        <a href="/dog_care" class="active">Dog Care</a>
+        <a href="/cat_care">Cat Care</a>
+        <a href="/create_account" class="active">Create an Account</a>
+        <a href="/giveaway">Have a pet to give away</a>
+        <a href="/contact">Contact Us</a>
+        <% if (user) { %>
+            <a href="/logout">Log Out</a>
+        <% } %>
+    </nav>
+    <main class="content" style="padding-left: 250px;">
+        <section class="hero">
+            <img src="/images/main.jpg" alt="Happy family with a new pet" width="60%" style="border-radius: 20px;">
+            <h2>Welcome to Companion's Corner!</h2>
+            <p>Find your new best friend today.</p>
+            <a href="/find">
+                <button>Start Your Search</button>
+            </a>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Companion's Corner is dedicated to helping pets find loving homes. We connect adoptable pets with caring people to create forever homes.</p>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Search for pets that match your lifestyle.</li>
+                <li>Learn about the pet you're interested in.</li>
+                <li>Fill out an adoption application.</li>
+                <li>Meet your potential new family member.</li>
+            </ol>
+        </section>
+
+        <section class="testimonials">
+            <h2>Happy Adopters</h2>
+            <blockquote>
+                "Adopting from Companion's Corner was an amazing experience. We found our furry friend and couldn't be happier!" - Jane Doe
+            </blockquote>
+            <!-- More testimonials can go here -->
+        </section>
+
+    </main>
+</div>
+
+<%- include('partials/footer') %>

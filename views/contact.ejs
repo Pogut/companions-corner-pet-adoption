@@ -1,0 +1,27 @@
+<%- include('partials/header', { title: 'Companion\'s Corner - Contact Us' }) %>
+
+<div class="main-wrapper">
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/find">Find a dog/cat</a>
+        <a href="/dog_care">Dog Care</a>
+        <a href="/cat_care">Cat Care</a>
+        <a href="/create_account">Create an Account</a>
+        <a href="/giveaway">Have a pet to give away</a>
+        <a href="/contact" class="active">Contact Us</a>
+        <% if (user) { %>
+            <a href="/logout">Log Out</a>
+        <% } %>
+    </nav>
+    <main class="content" style="padding-left: 250px; padding-top: 280px; padding-bottom: 60px;">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or would like to get in touch, please feel free to contact us.</p>
+        <ul>
+            <li><strong>Name:</strong> Parsa Hejazi</li>
+            <li><strong>Student ID:</strong> 40247098</li>
+            <li><strong>Email:</strong> <a style="color: black;" href="mailto:seyedphejazi@gmail.com">seyedphejazi@gmail.com</a></li>
+        </ul>
+    </main>
+</div>
+
+<%- include('partials/footer') %>
