@@ -184,7 +184,7 @@ app.post('/search_pets', express.urlencoded({ extended: true }), (req, res) => {
 
         let results = data.trim().split('\n').filter(line => {
             const parts = line.split(':');
-            // Assuming parts indexes: 0=id, 1=user, 2=type, 3=breed, 4=age, 5=gender, ...additional info
+            // Assuming parts indexes: 0=id, 1=user, 2=type, 3=breed, 4=age, 5=gender
             const [id, user, type, petBreed, petAge, petGender] = parts;
 
             // Start assuming a match
