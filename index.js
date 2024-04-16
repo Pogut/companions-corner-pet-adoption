@@ -215,7 +215,7 @@ app.post('/search_pets', express.urlencoded({ extended: true }), (req, res) => {
     });
 });
 
-// Log out route
+// The Log out route
 app.get('/logout', (req, res) => {
     // Destroy the session and redirect to the home page
     req.session.destroy(err => {
