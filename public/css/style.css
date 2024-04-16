@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+header img {
+max-width: 100px; /* Set maximum width */
+max-height: 100px; /* Set maximum height */
+width: auto; /* Maintain the aspect ratio */
+height: auto; /* Maintain the aspect ratio */
+border-radius: 50%; /* Make it round */
+display: block; /* Prevents inline default spacing */
+margin: 0 auto; /* Center the logo if header has a fixed height */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    position: fixed;
+    top: 257px; /* Set this to the bottom of your header */
+    left: 0;
+    bottom: 50px; /* Set this to the height of your footer */
+    width: 175px;
+    padding: 20px;
+    background-color: #d7d3d3;
+    box-sizing: border-box;
+    overflow-y: auto; /* In case of scrolling */
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(247, 245, 245);
+    padding: 8px 0;
+}
+a:hover {
+    color: green;
+}
+
+
+.hero {
+    background-image: url('placeholder-hero.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about, .how-it-works, .testimonials, .final-cta {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+nav a {
+    display: block; 
+    text-align: center; 
+    padding: 15px 10px; 
+    margin: 15px 10x; 
+    background-color: #d7d3d3;
+    border-radius: 5px; 
+    color: #333; 
+}
+
+nav a:hover {
+    background-color: #ddd; 
+}
+
+.form-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-page label, .form-page select, .form-page input[type="text"], .form-page button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-page fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-page legend {
+    padding: 0 5px;
+}
+
+.form-page input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-page button[type="submit"], .form-page button[type="reset"] {
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add this new rule */
+.main-wrapper {
+    display: flex;
+    flex: 1;
+}
+.main-content {
+    padding-top: 280px; /* Height of header plus additional space */
+}
+/* Update your .content class if necessary */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+/* Targeting each div that wraps a checkbox and its label for precise alignment */
+.form-page fieldset div {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 10px; /* Provides spacing between each checkbox-label pair */
+}
+
+.form-page label {
+    margin-left: 8px; /* Space between the checkbox and the label */
+    white-space: nowrap; /* Prevents the label from wrapping to the next line */
+}
+
+/* Ensuring the checkbox aligns with the text */
+.form-page input[type="checkbox"] {
+    margin-top: 0; /* Aligns top of checkbox with top of text */
+    margin-bottom: 0; /* Prevents extra space below the checkbox */
+}
+
+.references a {
+    font-style: italic;
+    color: black; /* Sets the default color */
+    text-decoration: none; /* Optional: Removes the underline from links */
+}
+.references a:hover {
+    color: green; /* Color changes to green on hover */
+}
+
+.form-page input[type="text"],
+.form-page input[type="password"] {
+    width: 100%; /* Full width of the form */
+    padding: 10px; /* Same padding for both */
+    margin-bottom: 10px; /* Space below the input */
+    box-sizing: border-box;
+}
+
+.form-page .btn-create-account {
+    display: block; /* Make the button a block element */
+    width: 100%; /* Full width of the form */
+    padding: 10px; /* Matching padding to input fields */
+    margin-top: 20px; /* Space above the button */
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

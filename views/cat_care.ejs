@@ -1,0 +1,40 @@
+<%- include('partials/header', { title: 'Companion\'s Corner - Cat Care' }) %>
+
+<div style="padding-top: 25px; display: flex; flex: 1;">
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/find">Find a dog/cat</a>
+        <a href="/dog_care" class="active">Dog Care</a>
+        <a href="/cat_care">Cat Care</a>
+        <a href="/create_account" class="active">Create an Account</a>
+        <a href="/giveaway">Have a pet to give away</a>
+        <a href="/contact">Contact Us</a>
+        <% if (user) { %>
+            <a href="/logout">Log Out</a>
+        <% } %>
+    </nav>
+    <main class="content" style="padding-left: 250px; padding-top: 250px;">
+        <h2>Cat Care Tips</h2>
+        <p>Ensuring your cat lives a happy and healthy life involves understanding and catering to their specific needs. Here are some foundational tips:</p>
+        <ul>
+            <li>Nutrition: Provide a balanced diet suited to their age, health status, and lifestyle.</li>
+            <li>Hydration: Ensure fresh water is always available.</li>
+            <li>Healthcare: Regular veterinary check-ups and vaccinations are vital.</li>
+            <li>Grooming: Regular brushing helps keep their coat healthy and reduces shedding.</li>
+            <li>Litter Box: Keep it clean and placed in a quiet, accessible location.</li>
+            <li>Stimulation: Offer various toys and activities to keep them mentally and physically stimulated.</li>
+            <li>Safety: Consider keeping your cat indoors or supervised outdoors to protect them from hazards.</li>
+        </ul>
+        <p>For more in-depth guidance on cat care, consider visiting the following resources:</p><br>
+        <div class="references">
+            <h3>Credits & References</h3>
+            <p>To view the websites below simply click on them!</p>
+            <ul>
+                <li><a href="https://www.aspca.org/pet-care/cat-care" target="_blank">ASPCA Cat Care Tips</a></li>
+                <li><a href="https://www.petmd.com/cat/care" target="_blank">PetMD Cat Care</a></li>
+            </ul>
+        </div>
+    </main>
+</div>
+
+<%- include('partials/footer') %>
