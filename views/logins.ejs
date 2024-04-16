@@ -9,9 +9,9 @@
         <a href="/create_account">Create an Account</a>
         <a href="/giveaway">Have a pet to give away</a>
         <a href="/contact">Contact Us</a>
-        <% if (user) { %>
+        <% if (typeof user !== 'undefined' && user) { %>
             <a href="/logout">Log Out</a>
-        <% } %>
+        <% } %>        
     </nav>
     <main class="content" style="padding-left: 250px; padding-top: 250px; padding-bottom: 60px;">
         <h2>Login to Your Account</h2>

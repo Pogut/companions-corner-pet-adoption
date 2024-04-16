@@ -17,11 +17,12 @@
         </div>
         <div id="date-time" style="margin-right: 20px; padding-top: 15px;"></div>
         <div style="padding-top: 13px;">
-            <% if (user) { %>
+            <% if (typeof user !== 'undefined' && user) { %>
                 <span>Welcome, <%= user %>!</span>
             <% } else { %>
                 <button style="border-radius: 100px; background-color: #f5aa46;" onclick="window.location.href='/logins'">Login</button>
             <% } %>
+            
         </div>
     </header>
     <script>

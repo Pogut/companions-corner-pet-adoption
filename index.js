@@ -115,7 +115,7 @@ app.post('/logins', express.urlencoded({ extended: true }), (req, res) => {
             res.redirect('/giveaway');
         } else {
             // If login fails, render the login page with an error message
-            res.render('logins', { message: 'Invalid username or password. Please try again.' });
+            res.render('logins', { message: 'Invalid username or password. Please try again.' , ser: req.session.user});
         }
     });
 });
